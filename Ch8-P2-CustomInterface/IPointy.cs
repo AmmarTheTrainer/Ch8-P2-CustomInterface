@@ -14,10 +14,11 @@ namespace Ch8_P2_CustomInterface
         //
         // while a write-only property in an interface would be:
         // retType PropName { set; }
+
         byte Points { get; } // interface types can contain properties prototypes.
 
         // Implicitly public and abstract.
-        byte GetNumberOfPoints();
+        //byte GetNumberOfPoints();
 
 
         //// Error! Interfaces cannot have data fields!
