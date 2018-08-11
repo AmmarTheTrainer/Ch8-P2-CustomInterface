@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ch8_P2_CustomInterface
 {
-    class Hexagon : Shape , IPointy
+    class Hexagon : Shape , IPointy , IDraw3D
     {
         public Hexagon()
         {
@@ -23,6 +23,11 @@ namespace Ch8_P2_CustomInterface
         public override void Draw()
         {
             Console.WriteLine("Drawing {0} the Hexagon", PetName);
+        }
+
+        public void Draw3D()
+        {
+            Console.WriteLine(" Drawing hexagon in 3D ");
         }
     }
 }
